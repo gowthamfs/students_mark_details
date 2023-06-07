@@ -1,0 +1,22 @@
+CREATE TABLE IF NOT EXISTS `register` (
+  `id` int(50) NOT NULL AUTO_INCREMENT,
+  `firstname` varchar(50) NOT NULL,
+  `lastname` varchar(100) NOT NULL,
+  `email` varchar(15) NOT NULL,
+  `phone` int(15) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `add_marks` (
+  `id` int(50) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `rollno` int(20) NOT NULL,
+  `sub1` int(20) NOT NULL,
+  `sub2` int(20) NOT NULL,
+  `sub3` int(20) NOT NULL,
+  `sub4` int(20) NOT NULL,
+  `sub5` int(20) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
